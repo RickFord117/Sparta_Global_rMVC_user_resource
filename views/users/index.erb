@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Resource</title>
+  </head>
+  <body>
+    <h1>Welcome to the user resource</h1>
+    <%= erb(:'partials/navigation', :layout => false)%>
+    <nav>
+      <%@user.each do |user|%>
+      <h2>User number
+      <a href="users/<%=user[:id]%>"><%=user[:id]%></a></h2>
+      <%end%>
+    </nav>
+
+
+  </body>
+</html>

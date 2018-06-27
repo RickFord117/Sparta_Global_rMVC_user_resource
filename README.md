@@ -1,0 +1,1 @@
+# Sparta_Global_rMVC_user_resource
